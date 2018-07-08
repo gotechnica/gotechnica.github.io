@@ -1,0 +1,271 @@
+@import 'base';
+@import 'vars';
+
+.button {
+  background-color: $bg-black;
+  // border: 3px solid $cyan;
+  padding: .8rem 6.4rem;
+  font-size: 2.8rem;
+  color: $white;
+  font-family: "DINPro";
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.register-button {
+  @extend .animate;
+  @extend .button;
+  border: none;
+}
+
+.section {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  .heading {
+    text-align: left;
+    margin-bottom: 6rem;
+  }
+  p {
+    margin-bottom: 2rem;
+    opacity: .8;
+  }
+}
+
+article.hero {
+  text-align: center;
+  background-color: $bg-black;
+  padding-top: 26rem;
+  padding-bottom: 26rem;
+  img.brand {
+    width: 60rem;
+    max-width: 100%;
+    margin-bottom: 4rem;
+  }
+  h2 {
+    color: $white;
+    margin-bottom: 4rem;
+    .faded {
+      opacity: .4;
+    }
+  }
+}
+
+article.body {
+  color: white;
+  background-color: $bg-black;
+  padding-bottom: 8rem;
+  font-size: 1.8rem;
+  section.intro {
+    @extend .section;
+    .fake-video {
+      width: 100%;
+      height: 30rem;
+      background-color: white;
+      opacity: .1;
+    }
+  }
+  section.registration {
+    @extend .section;
+    div.register-card {
+      border: 3px solid white;
+      padding: 4rem;
+      text-align: center;
+      .button {
+        padding: .8rem 0rem;
+        width: 100%;
+        display: block;
+      }
+      &.cyan {
+        border-color: $cyan;
+        a {
+          background-color: $cyan;
+        }
+      }
+      &.lavender {
+        border-color: $lavender;
+        a {
+          background-color: $lavender;
+        }
+      }
+      &.pink {
+        border-color: $pink;
+        a {
+          background-color: $pink;
+        }
+      }
+      p {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+  section.sched {
+    @extend .section;
+    h3 {
+      margin-bottom: 4rem;
+    }
+    .event {
+      h4 {
+        margin: 0;
+      }
+      display: flex;
+      justify-content: flex-start;
+      .time {
+        width: 12rem;
+        text-align: center;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        background-color: purple;
+        h4 {
+          color: white;
+        }
+      }
+      .details {
+        padding-top: 4rem;
+        padding-left: 4rem;
+      }
+    }
+    .left {
+      $highlight: $pink;
+      h3, h4 { color: $highlight; }
+      .time { background-color: $highlight }
+    }
+    .right {
+      $highlight: $lavender;
+      h3, h4 { color: $highlight; }
+      .time { background-color: $highlight }
+    }
+  }
+  section.faq {
+    @extend .section;
+    .heading {
+      margin-bottom: 6rem - 4rem;
+    }
+    .accordion {
+      cursor: pointer;
+      // padding: 18px;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      border: none;
+      padding-bottom: 1rem;
+      padding-top: 4rem;
+      margin-bottom: 2rem;
+      border-bottom: 3px solid $grey;
+      background-color: transparent;
+      text-align: left;
+      outline: none;
+      transition: ease all 0.3s;
+    }
+
+    .active, .accordion:hover {
+      // background-color: #ccc;
+      border-color: $cyan;
+    }
+
+    .panel {
+      display: none;
+      overflow: hidden;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+
+  section.sponsors {
+    @extend .section;
+  }
+
+}
+
+article.contact {
+  @extend .section;
+  background-color: $black;
+  text-align: center;
+  .heading {
+    text-align: center;
+  }
+  h1 {
+    margin-bottom: 4rem;
+  }
+  h1, h2 {
+    color: $white;
+  }
+  a {
+    color: $cyan;
+  }
+  .list-inline li {
+    list-style: inline;
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+    a {
+      position: relative;
+      transition: ease all .2s;
+      top: 0rem;
+      width: 6rem;
+      // border-radius: 3rem;
+      height: 6rem;
+      display: inline-block;
+      background-color: $cyan;
+      &:hover {
+        top: -.4rem;
+      }
+      .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        width: 100%;
+        height: 100%;
+      }
+      i {
+        font-size: 3rem;
+        color: black;
+      }
+    }
+  }
+}
+
+article.footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  // background-color: $pink;
+  text-align: center;
+  p {
+    color: white;
+    font-size: 1.8rem;
+  }
+}
+
+/* Animates main section of the website */
+.animate{
+  background: linear-gradient(270deg, #00ffff, #ff7bac);
+  background-size: 400% 400%;
+
+  -webkit-animation: GradientAnimation 10s ease infinite;
+  -moz-animation: GradientAnimation 10s ease infinite;
+  animation: GradientAnimation 10s ease infinite;
+}
+
+.static-gradient{
+   background: #ff7bac; /* For browsers that do not support gradients */
+   background: -webkit-linear-gradient(right, #00ffff , #ff7bac); /* For Safari 5.1 to 6.0 */
+   background: -o-linear-gradient(right, #00ffff , #ff7bac); /* For Opera 11.1 to 12.0 */
+   background: -moz-linear-gradient(right, #00ffff , #ff7bac); /* For Firefox 3.6 to 15 */
+   background: linear-gradient(to right, #00ffff , #ff7bac); /* Standard syntax */
+}
+
+@-webkit-keyframes GradientAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes GradientAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes GradientAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
