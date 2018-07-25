@@ -4,12 +4,41 @@
 .button {
   background-color: $bg-black;
   // border: 3px solid $cyan;
-  padding: .8rem 6.4rem;
-  font-size: 2.8rem;
+  padding: 1.4rem 7.2rem;
+  font-size: 2.2rem;
   color: $white;
   font-family: "DINPro";
   font-weight: bold;
   text-transform: uppercase;
+  position: relative;
+  top: 0;
+  position: relative;
+  transition: all ease .15s;
+  &:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: white;
+    opacity: 0;
+    transition: ease all .15s;
+  }
+  &:hover {
+    text-decoration: none;
+    color: white;
+    top: -.2rem;
+    &:after {
+      opacity: .4;
+    }
+  }
+  &:active {
+    &:after {
+      opacity: .8;
+    }
+  }
 }
 
 .register-button {
@@ -23,6 +52,8 @@
   padding-bottom: 8rem;
   .heading {
     text-align: left;
+    position: relative;
+    z-index: 0;
     margin-bottom: 6rem;
   }
   p {
@@ -57,11 +88,13 @@ article.body {
   font-size: 1.8rem;
   section.intro {
     @extend .section;
-    .fake-video {
+    iframe {
       width: 100%;
-      height: 30rem;
-      background-color: white;
-      opacity: .1;
+      height: 32rem;
+      background-color: black;
+      // height: 30rem;
+      // background-color: white;
+      // opacity: .1;
     }
   }
   section.registration {
@@ -69,7 +102,18 @@ article.body {
     div.register-card {
       border: 3px solid white;
       padding: 4rem;
+      margin-top: 4rem + 2rem;
       text-align: center;
+      img {
+        width: 14rem;
+        height: 14rem;
+        // padding: 1rem;
+        border: 2px solid white;
+        background-color: $bg-black;
+        border-radius: 7rem;
+        position: relative;
+        top: -7rem - 4rem;
+      }
       .button {
         padding: .8rem 0rem;
         width: 100%;
@@ -77,23 +121,33 @@ article.body {
       }
       &.cyan {
         border-color: $cyan;
+        img {
+          border-color: $cyan;
+        }
         a {
           background-color: $cyan;
         }
       }
       &.lavender {
         border-color: $lavender;
+        img {
+          border-color: $lavender;
+        }
         a {
           background-color: $lavender;
         }
       }
       &.pink {
         border-color: $pink;
+        img {
+          border-color: $pink;
+        }
         a {
           background-color: $pink;
         }
       }
       p {
+        margin-top: -8rem;
         margin-bottom: 4rem;
       }
     }
@@ -172,6 +226,9 @@ article.body {
 
   section.sponsors {
     @extend .section;
+    h1 {
+      margin-bottom: 4rem;
+    }
   }
 
 }
@@ -198,17 +255,12 @@ article.contact {
     margin-left: 10px;
     margin-right: 10px;
     a {
-      position: relative;
-      transition: ease all .2s;
-      top: 0rem;
+      @extend .button;
       width: 6rem;
-      // border-radius: 3rem;
+      padding: 0;
       height: 6rem;
       display: inline-block;
       background-color: $cyan;
-      &:hover {
-        top: -.4rem;
-      }
       .social {
         display: flex;
         justify-content: center;

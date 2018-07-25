@@ -81,7 +81,7 @@
       <div class="container">
         <img class="brand" src="./img/technica-logo-white-colorstripe.svg" alt="Technica">
         <h2>Nov 10-11, 2018 <span class="faded">@ UMD</span></h2>
-        <a href="#" class="register-button">Register</a>
+        <a id="registration-btn" href="#" class="register-button">Register</a>
       </div>
     </article>
 
@@ -105,20 +105,24 @@
               </p>
             </div>
             <div class="col-md-6">
-              <div class="fake-video">
-
-              </div>
+              <iframe
+                src="https://www.youtube.com/embed/AGpvKkHalig?rel=0&amp;showinfo=0"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen
+              ></iframe>
             </div>
           </div>
         </section>
 
-        <section class="registration">
+        <section id="registration" class="registration">
           <div class="heading">
             <h1>Registration</h1>
           </div>
           <div class="row">
             <div class="col-md-4">
               <div class="register-card cyan">
+                <img src="./img/hack.png" alt="Hack Icon">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit lorem ipsum dolor sit amet, consectetur adipisicing elit
                 </p>
@@ -127,6 +131,7 @@
             </div>
             <div class="col-md-4">
               <div class="register-card lavender">
+                <img src="./img/vol.png" alt="Volunteer Icon">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit lorem ipsum dolor sit amet, consectetur adipisicing elit
                 </p>
@@ -135,6 +140,7 @@
             </div>
             <div class="col-md-4">
               <div class="register-card pink">
+                <img src="./img/mentor.png" alt="Mentor Icon">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit lorem ipsum dolor sit amet, consectetur adipisicing elit
                 </p>
@@ -378,6 +384,7 @@
         <section class="sponsors">
           <div class="heading">
             <h1>Sponsors</h1>
+            <p>Interested in sponsoring? Send us an email at <a href="#">sponsorship@technica.org</a></p>
           </div>
         </section>
       </div>
@@ -390,28 +397,35 @@
         </div>
         <ul class="list-inline social-buttons">
           <li>
-            <a class="animate-button social-twitter" href="https://twitter.com/gotechnica?lang=en">
+            <a target="_blank" class="animate-button social-twitter" href="https://twitter.com/gotechnica?lang=en">
               <div class="social">
                 <i class="fa fa-twitter fa-lg"></i>
               </div>
             </a>
           </li>
           <li>
-            <a class="animate-button social-facebook" href="https://www.facebook.com/gotechnica/">
+            <a target="_blank" class="animate-button social-facebook" href="https://www.facebook.com/gotechnica/">
               <div class="social">
                 <i class="fa fa-facebook fa-lg"></i>
               </div>
             </a>
           </li>
           <li>
-            <a class="animate-button social-instagram" href="https://www.instagram.com/gotechnica/">
+            <a target="_blank" class="animate-button social-instagram" href="https://www.instagram.com/gotechnica/">
               <div class="social">
                 <i class="fa fa-instagram fa-lg"></i>
               </div>
             </a>
           </li>
           <li>
-            <a class="animate-button social-mail" href="mailto:hello@gotechnica.org">
+            <a target="_blank" class="animate-button social-medium" href="https://medium.com/@gotechnica">
+              <div class="social">
+                <i class="fa fa-medium fa-lg"></i>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" class="animate-button social-mail" href="mailto:hello@gotechnica.org">
               <div class="social">
                 <i class="fa fa-envelope fa-lg"></i>
               </div>
@@ -425,6 +439,7 @@
         <p>Copyright © 2018 Technica</p>
       </div>
     </article>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
       var acc = document.getElementsByClassName("accordion");
       var i;
@@ -440,6 +455,12 @@
               }
           });
       }
+
+      $("#registration-btn").click(function() {
+        $('html, body').animate({
+          scrollTop: $("#registration").offset().top
+        }, 500);
+      });
     </script>
   </body>
 </html>

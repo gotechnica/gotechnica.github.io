@@ -40,14 +40,42 @@ h4 {
   font-size: 1.8rem;
   font-weight: bold; }
 
-.button, .register-button {
+a {
+  color: #00ffff; }
+  a:hover {
+    color: #00ffff; }
+
+.button, .register-button, article.contact .list-inline li a {
   background-color: #222222;
-  padding: .8rem 6.4rem;
-  font-size: 2.8rem;
+  padding: 1.4rem 7.2rem;
+  font-size: 2.2rem;
   color: #ffffff;
   font-family: "DINPro";
   font-weight: bold;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  position: relative;
+  top: 0;
+  position: relative;
+  transition: all ease .15s; }
+  .button:after, .register-button:after, article.contact .list-inline li a:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: white;
+    opacity: 0;
+    transition: ease all .15s; }
+  .button:hover, .register-button:hover, article.contact .list-inline li a:hover {
+    text-decoration: none;
+    color: white;
+    top: -.2rem; }
+    .button:hover:after, .register-button:hover:after, article.contact .list-inline li a:hover:after {
+      opacity: .4; }
+  .button:active:after, .register-button:active:after, article.contact .list-inline li a:active:after {
+    opacity: .8; }
 
 .register-button {
   border: none; }
@@ -57,6 +85,8 @@ h4 {
   padding-bottom: 8rem; }
   .section .heading, article.body section.intro .heading, article.body section.registration .heading, article.body section.sched .heading, article.body section.faq .heading, article.body section.sponsors .heading, article.contact .heading {
     text-align: left;
+    position: relative;
+    z-index: 0;
     margin-bottom: 6rem; }
   .section p, article.body section.intro p, article.body section.registration p, article.body section.sched p, article.body section.faq p, article.body section.sponsors p, article.contact p {
     margin-bottom: 2rem;
@@ -82,32 +112,47 @@ article.body {
   background-color: #222222;
   padding-bottom: 8rem;
   font-size: 1.8rem; }
-  article.body section.intro .fake-video {
+  article.body section.intro iframe {
     width: 100%;
-    height: 30rem;
-    background-color: white;
-    opacity: .1; }
+    height: 32rem;
+    background-color: black; }
   article.body section.registration div.register-card {
     border: 3px solid white;
     padding: 4rem;
+    margin-top: 6rem;
     text-align: center; }
-    article.body section.registration div.register-card .button, article.body section.registration div.register-card .register-button {
+    article.body section.registration div.register-card img {
+      width: 14rem;
+      height: 14rem;
+      border: 2px solid white;
+      background-color: #222222;
+      border-radius: 7rem;
+      position: relative;
+      top: -11rem; }
+    article.body section.registration div.register-card .button, article.body section.registration div.register-card .register-button, article.body section.registration div.register-card article.contact .list-inline li a, article.contact .list-inline li article.body section.registration div.register-card a {
       padding: .8rem 0rem;
       width: 100%;
       display: block; }
     article.body section.registration div.register-card.cyan {
       border-color: #00ffff; }
+      article.body section.registration div.register-card.cyan img {
+        border-color: #00ffff; }
       article.body section.registration div.register-card.cyan a {
         background-color: #00ffff; }
     article.body section.registration div.register-card.lavender {
       border-color: #b6a1c4; }
+      article.body section.registration div.register-card.lavender img {
+        border-color: #b6a1c4; }
       article.body section.registration div.register-card.lavender a {
         background-color: #b6a1c4; }
     article.body section.registration div.register-card.pink {
       border-color: #ff7bac; }
+      article.body section.registration div.register-card.pink img {
+        border-color: #ff7bac; }
       article.body section.registration div.register-card.pink a {
         background-color: #ff7bac; }
     article.body section.registration div.register-card p {
+      margin-top: -8rem;
       margin-bottom: 4rem; }
   article.body section.sched h3 {
     margin-bottom: 4rem; }
@@ -158,6 +203,8 @@ article.body {
     overflow: hidden;
     padding-top: 1rem;
     padding-bottom: 1rem; }
+  article.body section.sponsors h1 {
+    margin-bottom: 4rem; }
 
 article.contact {
   background-color: #000000;
@@ -176,15 +223,11 @@ article.contact {
     margin-left: 10px;
     margin-right: 10px; }
     article.contact .list-inline li a {
-      position: relative;
-      transition: ease all .2s;
-      top: 0rem;
       width: 6rem;
+      padding: 0;
       height: 6rem;
       display: inline-block;
       background-color: #00ffff; }
-      article.contact .list-inline li a:hover {
-        top: -.4rem; }
       article.contact .list-inline li a .social {
         display: flex;
         justify-content: center;
