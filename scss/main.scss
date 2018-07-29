@@ -1,6 +1,10 @@
 @import 'base';
 @import 'vars';
 
+html {
+  background-color: black;
+}
+
 .button {
   background-color: $bg-black;
   // border: 3px solid $cyan;
@@ -62,11 +66,49 @@
   }
 }
 
+#bg-video {
+  // position: fixed;
+  // right: 0;
+  // z-index: 0;
+  // bottom: 0;
+  position: absolute;
+  top: -100px; // TODO REMOVE WHEN THE BORDERLESS VERSION COMES
+  left: 0;
+  z-index: 1;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 1;
+}
+
+.bg-video-overlay {
+  display: block;
+
+  background: rgb(34,34,34);
+  background: linear-gradient(0deg, rgba(34,34,34,1) 15%, rgba(34,34,34,0.6) 100%);
+
+  z-index: 2;
+  top: 0;
+  left: 0;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+article {
+  // background-color: $bg-black;
+}
+
 article.hero {
   text-align: center;
   background-color: $bg-black;
   padding-top: 26rem;
   padding-bottom: 26rem;
+  overflow: hidden;
+  position: relative;
+  .container {
+    position: relative;
+    z-index: 5;
+  }
   img.brand {
     width: 60rem;
     max-width: 100%;
@@ -85,6 +127,8 @@ article.body {
   color: white;
   background-color: $bg-black;
   padding-bottom: 8rem;
+  position: relative;
+  z-index: 5;
   font-size: 1.8rem;
   section.intro {
     @extend .section;
@@ -237,6 +281,8 @@ article.contact {
   @extend .section;
   background-color: $black;
   text-align: center;
+  position: relative;
+  z-index: 5;
   .heading {
     text-align: center;
   }
@@ -280,6 +326,8 @@ article.contact {
 article.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
+  position: relative;
+  z-index: 5;
   // background-color: $pink;
   text-align: center;
   p {

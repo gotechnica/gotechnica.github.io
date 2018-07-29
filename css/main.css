@@ -45,6 +45,9 @@ a {
   a:hover {
     color: #00f5f5; }
 
+html {
+  background-color: black; }
+
 .button, .register-button, article.contact .list-inline li a {
   background-color: #222222;
   padding: 1.4rem 7.2rem;
@@ -92,11 +95,36 @@ a {
     margin-bottom: 2rem;
     opacity: .8; }
 
+#bg-video {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  z-index: 1;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 1; }
+
+.bg-video-overlay {
+  display: block;
+  background: #222222;
+  background: linear-gradient(0deg, #222222 15%, rgba(34, 34, 34, 0.6) 100%);
+  z-index: 2;
+  top: 0;
+  left: 0;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%; }
+
 article.hero {
   text-align: center;
   background-color: #222222;
   padding-top: 26rem;
-  padding-bottom: 26rem; }
+  padding-bottom: 26rem;
+  overflow: hidden;
+  position: relative; }
+  article.hero .container {
+    position: relative;
+    z-index: 5; }
   article.hero img.brand {
     width: 60rem;
     max-width: 100%;
@@ -111,6 +139,8 @@ article.body {
   color: white;
   background-color: #222222;
   padding-bottom: 8rem;
+  position: relative;
+  z-index: 5;
   font-size: 1.8rem; }
   article.body section.intro iframe {
     width: 100%;
@@ -208,7 +238,9 @@ article.body {
 
 article.contact {
   background-color: #000000;
-  text-align: center; }
+  text-align: center;
+  position: relative;
+  z-index: 5; }
   article.contact .heading {
     text-align: center; }
   article.contact h1 {
@@ -242,6 +274,8 @@ article.contact {
 article.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
+  position: relative;
+  z-index: 5;
   text-align: center; }
   article.footer p {
     color: white;
