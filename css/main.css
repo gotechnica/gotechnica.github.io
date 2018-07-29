@@ -41,9 +41,9 @@ h4 {
   font-weight: bold; }
 
 a {
-  color: #00ffff; }
+  color: #00f5f5; }
   a:hover {
-    color: #00ffff; }
+    color: #00f5f5; }
 
 .button, .register-button, article.contact .list-inline li a {
   background-color: #222222;
@@ -134,11 +134,11 @@ article.body {
       width: 100%;
       display: block; }
     article.body section.registration div.register-card.cyan {
-      border-color: #00ffff; }
+      border-color: #00f5f5; }
       article.body section.registration div.register-card.cyan img {
-        border-color: #00ffff; }
+        border-color: #00f5f5; }
       article.body section.registration div.register-card.cyan a {
-        background-color: #00ffff; }
+        background-color: #00f5f5; }
     article.body section.registration div.register-card.lavender {
       border-color: #b6a1c4; }
       article.body section.registration div.register-card.lavender img {
@@ -197,7 +197,7 @@ article.body {
     outline: none;
     transition: ease all 0.3s; }
   article.body section.faq .active, article.body section.faq .accordion:hover {
-    border-color: #00ffff; }
+    border-color: #00f5f5; }
   article.body section.faq .panel {
     display: none;
     overflow: hidden;
@@ -216,7 +216,7 @@ article.contact {
   article.contact h1, article.contact h2 {
     color: #ffffff; }
   article.contact a {
-    color: #00ffff; }
+    color: #00f5f5; }
   article.contact .list-inline li {
     list-style: inline;
     display: inline;
@@ -227,7 +227,7 @@ article.contact {
       padding: 0;
       height: 6rem;
       display: inline-block;
-      background-color: #00ffff; }
+      background-color: #00f5f5; }
       article.contact .list-inline li a .social {
         display: flex;
         justify-content: center;
