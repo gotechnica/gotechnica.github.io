@@ -113,8 +113,8 @@ article {
 article.hero {
   text-align: center;
   background-color: $bg-black;
-  padding-top: 26rem;
-  padding-bottom: 28rem;
+  padding-top: 20rem;
+  padding-bottom: 22rem;
   overflow: hidden;
   position: relative;
   .container {
@@ -128,10 +128,17 @@ article.hero {
   }
   h2 {
     color: $white;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
     .faded {
       opacity: .4;
     }
+  }
+  h4 {
+    font-family: 'Damion';
+    color: $white;
+    margin-bottom: 4rem;
+    font-size: 5rem;
+    font-weight: normal;
   }
 }
 
@@ -159,13 +166,21 @@ article.body {
   }
   section.registration {
     @extend .section;
+    background-image: url("../img/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $bg-black-2;
     div.register-card {
       border: 3px solid white;
       padding: 4rem;
+      background-color: $bg-black;
       margin-top: 4rem + 2rem;
       text-align: center;
-      @media (max-width: 767.98px) {
+      @media (max-width: 992px) {
         margin-bottom: 4rem;
+      }
+      p {
+        text-align: left;
       }
       img {
         width: 14rem;
@@ -298,7 +313,10 @@ article.body {
 
 article.contact {
   @extend .section;
-  background-color: $black;
+  background-image: url("../img/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $bg-black-2;
   text-align: center;
   position: relative;
   z-index: 5;

@@ -10,6 +10,10 @@
   font-weight: 600;
   src: url("../fonts/DINPro-Bold.otf"); }
 
+@font-face {
+  font-family: 'Damion';
+  src: url("../fonts/Damion-Regular.ttf"); }
+
 html {
   font-size: 62.5%; }
 
@@ -62,6 +66,14 @@ a {
   color: #00f5f5; }
   a:hover {
     color: #00f5f5; }
+
+::selection {
+  background: #b6a1c4;
+  /* WebKit/Blink Browsers */ }
+
+::-moz-selection {
+  background: #b6a1c4;
+  /* Gecko Browsers */ }
 
 html {
   background-color: black; }
@@ -146,8 +158,8 @@ html {
 article.hero {
   text-align: center;
   background-color: #222222;
-  padding-top: 26rem;
-  padding-bottom: 28rem;
+  padding-top: 20rem;
+  padding-bottom: 22rem;
   overflow: hidden;
   position: relative; }
   article.hero .container {
@@ -159,9 +171,15 @@ article.hero {
     margin-bottom: 4rem; }
   article.hero h2 {
     color: #ffffff;
-    margin-bottom: 4rem; }
+    margin-bottom: 6rem; }
     article.hero h2 .faded {
       opacity: .4; }
+  article.hero h4 {
+    font-family: 'Damion';
+    color: #ffffff;
+    margin-bottom: 4rem;
+    font-size: 5rem;
+    font-weight: normal; }
 
 article.body {
   color: white;
@@ -177,47 +195,55 @@ article.body {
     @media (max-width: 767.98px) {
       article.body section.intro iframe {
         margin-top: 4rem; } }
-  article.body section.registration div.register-card {
-    border: 3px solid white;
-    padding: 4rem;
-    margin-top: 6rem;
-    text-align: center; }
-    @media (max-width: 767.98px) {
-      article.body section.registration div.register-card {
-        margin-bottom: 4rem; } }
-    article.body section.registration div.register-card img {
-      width: 14rem;
-      height: 14rem;
-      border: 2px solid white;
+  article.body section.registration {
+    background-image: url("../img/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #1a1a1a; }
+    article.body section.registration div.register-card {
+      border: 3px solid white;
+      padding: 4rem;
       background-color: #222222;
-      border-radius: 7rem;
-      position: relative;
-      top: -11rem; }
-    article.body section.registration div.register-card .button, article.body section.registration div.register-card .register-button, article.body section.registration div.register-card article.contact .list-inline li a, article.contact .list-inline li article.body section.registration div.register-card a {
-      padding: .8rem 0rem;
-      width: 100%;
-      display: block; }
-    article.body section.registration div.register-card.cyan {
-      border-color: #00f5f5; }
-      article.body section.registration div.register-card.cyan img {
+      margin-top: 6rem;
+      text-align: center; }
+      @media (max-width: 992px) {
+        article.body section.registration div.register-card {
+          margin-bottom: 4rem; } }
+      article.body section.registration div.register-card p {
+        text-align: left; }
+      article.body section.registration div.register-card img {
+        width: 14rem;
+        height: 14rem;
+        border: 2px solid white;
+        background-color: #222222;
+        border-radius: 7rem;
+        position: relative;
+        top: -11rem; }
+      article.body section.registration div.register-card .button, article.body section.registration div.register-card .register-button, article.body section.registration div.register-card article.contact .list-inline li a, article.contact .list-inline li article.body section.registration div.register-card a {
+        padding: .8rem 0rem;
+        width: 100%;
+        display: block; }
+      article.body section.registration div.register-card.cyan {
         border-color: #00f5f5; }
-      article.body section.registration div.register-card.cyan a {
-        background-color: #00f5f5; }
-    article.body section.registration div.register-card.lavender {
-      border-color: #b6a1c4; }
-      article.body section.registration div.register-card.lavender img {
+        article.body section.registration div.register-card.cyan img {
+          border-color: #00f5f5; }
+        article.body section.registration div.register-card.cyan a {
+          background-color: #00f5f5; }
+      article.body section.registration div.register-card.lavender {
         border-color: #b6a1c4; }
-      article.body section.registration div.register-card.lavender a {
-        background-color: #b6a1c4; }
-    article.body section.registration div.register-card.pink {
-      border-color: #ff7bac; }
-      article.body section.registration div.register-card.pink img {
+        article.body section.registration div.register-card.lavender img {
+          border-color: #b6a1c4; }
+        article.body section.registration div.register-card.lavender a {
+          background-color: #b6a1c4; }
+      article.body section.registration div.register-card.pink {
         border-color: #ff7bac; }
-      article.body section.registration div.register-card.pink a {
-        background-color: #ff7bac; }
-    article.body section.registration div.register-card p {
-      margin-top: -8rem;
-      margin-bottom: 4rem; }
+        article.body section.registration div.register-card.pink img {
+          border-color: #ff7bac; }
+        article.body section.registration div.register-card.pink a {
+          background-color: #ff7bac; }
+      article.body section.registration div.register-card p {
+        margin-top: -8rem;
+        margin-bottom: 4rem; }
   article.body section.sched h3 {
     margin-bottom: 4rem; }
   article.body section.sched .event {
@@ -271,7 +297,10 @@ article.body {
     margin-bottom: 4rem; }
 
 article.contact {
-  background-color: #000000;
+  background-image: url("../img/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #1a1a1a;
   text-align: center;
   position: relative;
   z-index: 5; }

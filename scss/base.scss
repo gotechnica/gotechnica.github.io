@@ -15,6 +15,10 @@
   src: url('../fonts/DINPro-Bold.otf');
 }
 
+@font-face {
+  font-family: 'Damion';
+  src: url('../fonts/Damion-Regular.ttf');
+}
 
 html { font-size: 62.5%; }
 
@@ -169,3 +173,10 @@ a {
 //   margin-left: 10px;
 //   margin-right: 10px;
 // }
+
+::selection {
+  background: $lavender; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: $lavender; /* Gecko Browsers */
+}
