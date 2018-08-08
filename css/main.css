@@ -162,6 +162,11 @@ article.hero {
   padding-bottom: 22rem;
   overflow: hidden;
   position: relative; }
+  @media (max-width: 767.98px) {
+    article.hero {
+      background-image: url("../img/bg-mobile.png");
+      background-repeat: no-repeat;
+      background-size: cover; } }
   article.hero .container {
     position: relative;
     z-index: 5; }
