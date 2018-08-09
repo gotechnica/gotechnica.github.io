@@ -134,7 +134,7 @@
                 <div class="register-card cyan">
                   <img src="./img/hack.png" alt="Hack Icon">
                   <p>
-                    Come build hardware or software projects, or anything else your heart desires with other hackers! You don’t have to know how to code to be a hacker. Hackers can be students, designers, or anyone who loves tech!
+Come build using hardware, software, or anything you want with other hackers! You don’t have to know how to code to be a hacker. Hackers can be students, designers, or just any tech-lover out there!
                   </p>
                   <a target="_blank" href="https://gotechnica.typeform.com/to/YQNAzU" class="button">Hack</a>
                 </div>
@@ -143,24 +143,24 @@
                 <div class="register-card lavender">
                   <img src="./img/vol.png" alt="Volunteer Icon">
                   <p>
-                    Come help with the operations! Volunteers are a huge helping hand and help make sure the hackathon runs smoothly. Anyone of any gender can volunteer and help make Technica a success!
-                    <br><br>
+Come help hackers with their ideas by being a resource for hackers who may have questions about their projects. Mentors can be anyone of <strong>any gender</strong> willing to share their knowledge!
                   </p>
                   <!-- TODO add link! -->
-                  <!-- <a href="#" class="button">Volunteer</a> -->
-                  <h4>COMING SOON</h4>
+                  <!-- <a href="#" class="button ">Volunteer</a> -->
+                  <a href="#" class="button disabled">COMING SOON</a>
+                  <!-- <h4>COMING SOON</h4> -->
                 </div>
               </div>
               <div class="col-lg-4">
                 <div class="register-card pink">
                   <img src="./img/mentor.png" alt="Mentor Icon">
                   <p>
-                    Come help hackers with their ideas by being a resource for hackers who may have questions about their projects. Mentors can be anyone of any gender willing to share their knowledge!
-                    <br><br><br>
+Come help with the operations! Volunteers are a huge helping hand and help make sure the hackathon runs smoothly. Anyone of <strong>any gender</strong> can volunteer and help make Technica a success!
                   </p>
                   <!-- TODO add link! -->
-                  <!-- <a href="#" class="button">Mentor</a> -->
-                  <h4>COMING SOON</h4>
+                  <!-- <a href="#" class="button ">Mentor</a> -->
+                  <a href="#" class="button disabled">COMING SOON</a>
+                  <!-- <h4>COMING SOON</h4> -->
                 </div>
               </div>
             </div>
@@ -513,11 +513,11 @@
           acc[i].addEventListener("click", function() {
               this.classList.toggle("active");
               var panel = this.nextElementSibling;
-              if (panel.style.display === "block") {
-                  panel.style.display = "none";
+              if (panel.style.maxHeight){
+                panel.style.maxHeight = null;
               } else {
-                  panel.style.display = "block";
-              }
+                panel.style.maxHeight = panel.scrollHeight + "px";
+              } 
           });
       }
 
