@@ -209,8 +209,14 @@ article.body {
       border: 3px solid white;
       padding: 4rem;
       background-color: #222222;
-      margin-top: 6rem;
-      text-align: center; }
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      -webkit-flex: 1;
+      /* Safari 6.1+ */
+      -ms-flex: 1;
+      /* IE 10 */
+      flex: 1; }
       @media (max-width: 992px) {
         article.body section.registration div.register-card {
           margin-bottom: 4rem; } }
@@ -232,18 +238,21 @@ article.body {
         width: 100%;
         display: block; }
       article.body section.registration div.register-card.cyan {
+        display: flex;
         border-color: #00f5f5; }
         article.body section.registration div.register-card.cyan img {
           border-color: #00f5f5; }
         article.body section.registration div.register-card.cyan a {
           background-color: #00f5f5; }
       article.body section.registration div.register-card.lavender {
+        display: flex;
         border-color: #b6a1c4; }
         article.body section.registration div.register-card.lavender img {
           border-color: #b6a1c4; }
         article.body section.registration div.register-card.lavender a {
           background-color: #b6a1c4; }
       article.body section.registration div.register-card.pink {
+        display: flex;
         border-color: #ff7bac; }
         article.body section.registration div.register-card.pink img {
           border-color: #ff7bac; }
@@ -392,7 +401,12 @@ article.footer {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
+
+.row-eq-height > [class*='col-'] {
+  display: flex;
+  flex-direction: column; }
 
 @-webkit-keyframes GradientAnimation {
   0% {
