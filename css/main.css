@@ -407,3 +407,13 @@ article.footer {
     background-position: 100% 50%; }
   100% {
     background-position: 0% 50%; } }
+
+/*
+ * Row with equal height columns
+ * --------------------------------------------------
+ */
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
