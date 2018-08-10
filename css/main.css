@@ -384,6 +384,16 @@ article.footer {
   background: linear-gradient(to right, #00ffff, #ff7bac);
   /* Standard syntax */ }
 
+/*
+ * Row with equal height columns
+ * --------------------------------------------------
+ */
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
 @-webkit-keyframes GradientAnimation {
   0% {
     background-position: 0% 50%; }
@@ -407,13 +417,3 @@ article.footer {
     background-position: 100% 50%; }
   100% {
     background-position: 0% 50%; } }
-
-/*
- * Row with equal height columns
- * --------------------------------------------------
- */
-.row-eq-height {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
