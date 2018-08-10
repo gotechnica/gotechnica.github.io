@@ -89,7 +89,9 @@
         <h4>Light the Way</h4>
         <img class="brand" src="./img/technica-logo-white-colorstripe.svg" alt="Technica">
         <h2>Nov 10-11, 2018 <span class="faded">@ UMD</span></h2>
-        <a id="registration-btn" href="#" class="register-button">Register</a>
+        <a id="registration-btn" href="#" class="register-button">Register
+          <img src="./img/technica-burst.gif" id="color-burst-img"/ >
+        </a>
       </div>
     </article>
 
@@ -536,6 +538,14 @@ Come help with the operations! Volunteers are a huge helping hand and help make 
               }
           });
       }
+
+      $("#registration-btn").hover(function() {
+        $('#color-burst-img').show().attr('src','./img/technica-burst.gif');
+      }, function() {
+        $('#color-burst-img').hide().attr('src','');
+      })
+
+
 
       $("#registration-btn").click(function() {
         $('html, body').animate({

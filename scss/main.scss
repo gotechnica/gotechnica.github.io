@@ -432,6 +432,17 @@ article.footer {
    background: -moz-linear-gradient(right, #00ffff , #ff7bac); /* For Firefox 3.6 to 15 */
    background: linear-gradient(to right, #00ffff , #ff7bac); /* Standard syntax */
 }
+#color-burst-img {
+  position: absolute;
+  display: none;
+  top: -400%;
+  pointer-events: none;
+  left: -52%;
+  width: 200%;
+  z-index: 1;
+}
+
+
 
 /*
  * Row with equal height columns
