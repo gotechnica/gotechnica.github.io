@@ -219,13 +219,16 @@ article.body {
       flex: 1; }
       @media (max-width: 992px) {
         article.body section.registration div.register-card {
-          margin-bottom: 4rem; } }
+          margin-bottom: 12rem; }
+          article.body section.registration div.register-card.last {
+            margin-bottom: 4rem; } }
       article.body section.registration div.register-card p {
         text-align: left; }
       article.body section.registration div.register-card .disabled {
         background-color: #464343 !important;
         pointer-events: none !important; }
       article.body section.registration div.register-card img {
+        align-self: center;
         width: 14rem;
         height: 14rem;
         border: 2px solid white;
@@ -236,7 +239,9 @@ article.body {
       article.body section.registration div.register-card .button, article.body section.registration div.register-card .register-button, article.body section.registration div.register-card article.contact .list-inline li a, article.contact .list-inline li article.body section.registration div.register-card a {
         padding: .8rem 0rem;
         width: 100%;
-        display: block; }
+        display: block;
+        margin-bottom: 0;
+        margin-top: auto; }
       article.body section.registration div.register-card.cyan {
         display: flex;
         border-color: #00f5f5; }
