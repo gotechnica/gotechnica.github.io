@@ -13,3 +13,7 @@ Quickstart
 Watch SCSS changes
 
 `npm run watch-scss`
+
+## Credits
+
+Animation made thanks to Héctor’s [tutorial](https://www.youtube.com/watch?v=DuQpdUvNy7M&t=19s)
