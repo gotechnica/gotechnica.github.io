@@ -401,10 +401,10 @@ article.footer {
 #color-burst-img {
   position: absolute;
   display: none;
-  top: -400%;
+  top: -220%;
   pointer-events: none;
-  left: -52%;
-  width: 200%;
+  left: -12%;
+  width: 120%;
   z-index: 1; }
 
 /*
