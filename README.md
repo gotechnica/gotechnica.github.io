@@ -17,3 +17,4 @@ Watch SCSS changes
 ## Credits
 
 Animation made thanks to Héctor’s [tutorial](https://www.youtube.com/watch?v=DuQpdUvNy7M&t=19s)
+Hi Elli
