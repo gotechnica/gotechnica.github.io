@@ -265,6 +265,10 @@ article.body {
       h4 {
         margin: 0;
       }
+      br {
+        display: block;
+        margin: 2rem 0;
+      }
       display: flex;
       justify-content: flex-start;
       .time {
