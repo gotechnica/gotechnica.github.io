@@ -345,6 +345,12 @@ article.body {
     h1 {
       margin-bottom: 4rem;
     }
+    .logo {
+      padding: 6rem;
+      img {
+        max-height: 10rem;
+      }
+    }
   }
 
 }
