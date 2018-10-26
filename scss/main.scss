@@ -345,14 +345,33 @@ article.body {
     h1 {
       margin-bottom: 4rem;
     }
-    .logo {
+    .gold-sponsor {
       padding: 6rem;
       img {
         max-height: 10rem;
       }
     }
+    .silver-sponsor {
+      padding: 4rem;
+      img {
+        max-height: 10rem;
+      }
+    }
+    .sponsor {
+      padding: 3rem;
+      img {
+        max-height: 10rem;
+      }
+    }
+    .small-sponsor {
+      padding: 2rem;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      img {
+        max-height: 10rem;
+      }
+    }
   }
-
 }
 
 article.contact {
