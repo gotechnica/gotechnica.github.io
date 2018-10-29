@@ -353,8 +353,10 @@ article.body {
       img {
         max-width: 24rem;
         max-height: 6rem;
-        transition: ease all .2s;
+        opacity: .7;
+        transition: ease all .1s;
         &:hover {
+          opacity: 1;
           transform: scale(1.05);
         }
       }

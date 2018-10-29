@@ -332,8 +332,10 @@ article.body {
     article.body section.sponsors .base-sponsor img, article.body section.sponsors .gold-sponsor img, article.body section.sponsors .silver-sponsor img, article.body section.sponsors .sponsor img, article.body section.sponsors .small-sponsor img {
       max-width: 24rem;
       max-height: 6rem;
-      transition: ease all .2s; }
+      opacity: .7;
+      transition: ease all .1s; }
       article.body section.sponsors .base-sponsor img:hover, article.body section.sponsors .gold-sponsor img:hover, article.body section.sponsors .silver-sponsor img:hover, article.body section.sponsors .sponsor img:hover, article.body section.sponsors .small-sponsor img:hover {
+        opacity: 1;
         transform: scale(1.05); }
   article.body section.sponsors .gold-sponsor img {
     max-width: 28rem;
