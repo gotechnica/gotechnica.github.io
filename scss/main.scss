@@ -345,14 +345,39 @@ article.body {
     h1 {
       margin-bottom: 4rem;
     }
-    .logo {
-      padding: 6rem;
+    .caption {
+      margin-bottom: 4rem;
+    }
+    .base-sponsor {
+      padding: 4rem 0rem;
       img {
-        max-height: 10rem;
+        max-width: 24rem;
+        max-height: 6rem;
+        opacity: .7;
+        transition: ease all .1s;
+        &:hover {
+          opacity: 1;
+          transform: scale(1.05);
+        }
       }
     }
+    .gold-sponsor {
+      @extend .base-sponsor;
+      img {
+        max-width: 28rem;
+        max-height: 8rem;
+      }
+    }
+    .silver-sponsor {
+      @extend .base-sponsor;
+    }
+    .sponsor {
+      @extend .base-sponsor;
+    }
+    .small-sponsor {
+      @extend .base-sponsor;
+    }
   }
-
 }
 
 article.contact {
