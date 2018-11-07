@@ -258,8 +258,22 @@ article.body {
   }
   section.sched {
     @extend .section;
-    h3 {
+    h1{
       margin-bottom: 4rem;
+    }
+    h3 {
+      text-align: left;
+      margin-bottom: 4rem;
+    }
+    .app{
+      max-width: 16rem;
+      margin: 0px 4px;
+      opacity: .7;
+      transition: ease all .1s;
+      &:hover {
+        opacity: 1;
+        transform: scale(1.05);
+      }
     }
     .event {
       h4 {
