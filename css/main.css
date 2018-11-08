@@ -436,23 +436,18 @@ article.body section.registration div.register-card p {
   margin-bottom: 4rem;
 }
 
-/* line 259, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
-article.body section.sched {
-  text-align: center;
-}
-
-/* line 262, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+/* line 261, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
 article.body section.sched h1 {
   margin-bottom: 4rem;
 }
 
-/* line 265, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+/* line 264, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
 article.body section.sched h3 {
   text-align: left;
   margin-bottom: 2rem;
 }
 
-/* line 269, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+/* line 268, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
 article.body section.sched .app {
   max-width: 16rem;
   margin: 0px 4px;
@@ -460,41 +455,41 @@ article.body section.sched .app {
   transition: ease all .1s;
 }
 
-/* line 274, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+/* line 273, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
 article.body section.sched .app:hover {
   opacity: 1;
   transform: scale(1.05);
 }
 
-/* line 279, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+/* line 278, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
 article.body section.sched .schedule-table {
   margin-top: 4rem;
-  text-align: center;
+  text-align: left;
   width: 100%;
 }
 
-/* line 283, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+/* line 282, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
 article.body section.sched .schedule-table tr {
   border-bottom: 2px solid #394a50;
 }
 
-/* line 285, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+/* line 284, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
 article.body section.sched .schedule-table tr.heading {
   border: none;
 }
 
-/* line 289, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+/* line 288, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
 article.body section.sched .schedule-table th, article.body section.sched .schedule-table td {
   min-width: 12rem;
   padding: 1rem;
 }
 
-/* line 299, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+/* line 298, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
 article.body section.faq .heading {
   margin-bottom: 2rem;
 }
 
-/* line 302, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+/* line 301, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
 article.body section.faq .accordion {
   cursor: pointer;
   display: flex;
@@ -511,48 +506,48 @@ article.body section.faq .accordion {
   transition: ease all 0.3s;
 }
 
-/* line 319, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+/* line 318, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
 article.body section.faq .active, article.body section.faq .accordion:hover {
   border-color: #00f5f5;
 }
 
 @media (max-width: 767.98px) {
-  /* line 319, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+  /* line 318, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
   article.body section.faq .active, article.body section.faq .accordion:hover {
     border-color: #464343;
   }
 }
 
 @media (max-width: 767.98px) {
-  /* line 327, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+  /* line 326, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
   article.body section.faq .accordion:active {
     border-color: #00f5f5;
   }
 }
 
-/* line 333, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+/* line 332, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
 article.body section.faq .panel {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.1s ease-out;
 }
 
-/* line 342, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+/* line 341, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
 article.body section.sponsors h1 {
   margin-bottom: 4rem;
 }
 
-/* line 345, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+/* line 344, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
 article.body section.sponsors .caption {
   margin-bottom: 4rem;
 }
 
-/* line 348, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+/* line 347, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
 article.body section.sponsors .base-sponsor, article.body section.sponsors .gold-sponsor, article.body section.sponsors .silver-sponsor, article.body section.sponsors .sponsor, article.body section.sponsors .small-sponsor {
   padding: 4rem 0rem;
 }
 
-/* line 350, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+/* line 349, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
 article.body section.sponsors .base-sponsor img, article.body section.sponsors .gold-sponsor img, article.body section.sponsors .silver-sponsor img, article.body section.sponsors .sponsor img, article.body section.sponsors .small-sponsor img {
   max-width: 24rem;
   max-height: 6rem;
@@ -560,19 +555,19 @@ article.body section.sponsors .base-sponsor img, article.body section.sponsors .
   transition: ease all .1s;
 }
 
-/* line 355, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+/* line 354, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
 article.body section.sponsors .base-sponsor img:hover, article.body section.sponsors .gold-sponsor img:hover, article.body section.sponsors .silver-sponsor img:hover, article.body section.sponsors .sponsor img:hover, article.body section.sponsors .small-sponsor img:hover {
   opacity: 1;
   transform: scale(1.05);
 }
 
-/* line 363, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+/* line 362, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
 article.body section.sponsors .gold-sponsor img {
   max-width: 28rem;
   max-height: 8rem;
 }
 
-/* line 380, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+/* line 379, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
 article.contact {
   background-image: url("../img/banner.png");
   background-repeat: no-repeat;
@@ -583,27 +578,27 @@ article.contact {
   z-index: 5;
 }
 
-/* line 389, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+/* line 388, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
 article.contact .heading {
   text-align: center;
 }
 
-/* line 392, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+/* line 391, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
 article.contact h1 {
   margin-bottom: 4rem;
 }
 
-/* line 395, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+/* line 394, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
 article.contact h1, article.contact h2 {
   color: #ffffff;
 }
 
-/* line 398, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+/* line 397, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
 article.contact a {
   color: #00f5f5;
 }
 
-/* line 401, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+/* line 400, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
 article.contact .list-inline li {
   list-style: inline;
   display: inline;
@@ -611,7 +606,7 @@ article.contact .list-inline li {
   margin-right: 10px;
 }
 
-/* line 406, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+/* line 405, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
 article.contact .list-inline li a {
   width: 6rem;
   padding: 0;
@@ -620,7 +615,7 @@ article.contact .list-inline li a {
   background-color: #00f5f5;
 }
 
-/* line 413, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+/* line 412, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
 article.contact .list-inline li a .social {
   display: flex;
   justify-content: center;
@@ -630,26 +625,26 @@ article.contact .list-inline li a .social {
   height: 100%;
 }
 
-/* line 421, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+/* line 420, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
 article.contact .list-inline li a i {
   font-size: 3rem;
   color: black;
 }
 
 @media (max-width: 767.98px) {
-  /* line 406, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+  /* line 405, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
   article.contact .list-inline li a {
     margin-bottom: 2rem;
     width: 4rem;
     height: 4rem;
   }
-  /* line 429, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+  /* line 428, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
   article.contact .list-inline li a i {
     font-size: 2rem;
   }
 }
 
-/* line 437, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+/* line 436, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
 article.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -658,14 +653,14 @@ article.footer {
   text-align: center;
 }
 
-/* line 444, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+/* line 443, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
 article.footer p {
   color: white;
   font-size: 1.8rem;
 }
 
 /* Animates main section of the website */
-/* line 451, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+/* line 450, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
 .animate, .register-button {
   background: linear-gradient(270deg, #00ffff, #ff7bac);
   background-size: 400% 400%;
@@ -674,7 +669,7 @@ article.footer p {
   animation: GradientAnimation 10s ease infinite;
 }
 
-/* line 460, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+/* line 459, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
 .static-gradient {
   background: #ff7bac;
   /* For browsers that do not support gradients */
@@ -688,7 +683,7 @@ article.footer p {
   /* Standard syntax */
 }
 
-/* line 467, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+/* line 466, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
 #color-burst-img {
   position: absolute;
   display: none;
@@ -703,7 +698,7 @@ article.footer p {
  * Row with equal height columns
  * --------------------------------------------------
  */
-/* line 483, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+/* line 482, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
 .row-eq-height {
   display: -webkit-box;
   display: -webkit-flex;
@@ -712,7 +707,7 @@ article.footer p {
   flex-wrap: wrap;
 }
 
-/* line 491, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
+/* line 490, D:/Elli/Documents/Technica/gotechnica.github.io/scss/main.scss */
 .row-eq-height > [class*='col-'] {
   display: flex;
   flex-direction: column;
