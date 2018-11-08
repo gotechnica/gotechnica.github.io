@@ -258,12 +258,13 @@ article.body {
   }
   section.sched {
     @extend .section;
+    text-align: center;
     h1{
       margin-bottom: 4rem;
     }
     h3 {
       text-align: left;
-      margin-bottom: 4rem;
+      margin-bottom: 2rem;
     }
     .app{
       max-width: 16rem;
@@ -275,40 +276,22 @@ article.body {
         transform: scale(1.05);
       }
     }
-    .event {
-      h4 {
-        margin: 0;
-      }
-      br {
-        display: block;
-        margin: 2rem 0;
-      }
-      display: flex;
-      justify-content: flex-start;
-      .time {
-        width: 12rem;
-        text-align: center;
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-        background-color: purple;
-        h4 {
-          color: white;
+    .schedule-table {
+      margin-top: 4rem;
+      text-align: center;
+      width: 100%;
+      tr {
+        border-bottom: 2px solid #394a50;
+        &.heading {
+          border: none;
         }
       }
-      .details {
-        padding-top: 4rem;
-        padding-left: 4rem;
+      th, td {
+        min-width: 12rem;
+        padding: 1rem;
+        // padding-right: 1rem;
+        // padding-bottom: .8rem;
       }
-    }
-    .left {
-      $highlight: $pink;
-      h3, h4 { color: $highlight; }
-      .time { background-color: $highlight }
-    }
-    .right {
-      $highlight: $lavender;
-      h3, h4 { color: $highlight; }
-      .time { background-color: $highlight }
     }
   }
   section.faq {
