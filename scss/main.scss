@@ -280,9 +280,17 @@ article.body {
       text-align: left;
       width: 100%;
       tr {
-        border-bottom: 2px solid #394a50;
+        border-bottom: 2px solid $grey;
         &.heading {
           border: none;
+          h3 {
+            color: $lavender;
+          }
+        }
+        &.subheading {
+          h3 {
+            padding-top: 6rem;
+          }
         }
       }
       th, td {
