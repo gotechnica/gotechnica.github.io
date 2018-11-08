@@ -258,12 +258,30 @@ article.body {
   }
   section.sched {
     @extend .section;
-    h3 {
+    h1{
       margin-bottom: 4rem;
+    }
+    h3 {
+      text-align: left;
+      margin-bottom: 4rem;
+    }
+    .app{
+      max-width: 16rem;
+      margin: 0px 4px;
+      opacity: .7;
+      transition: ease all .1s;
+      &:hover {
+        opacity: 1;
+        transform: scale(1.05);
+      }
     }
     .event {
       h4 {
         margin: 0;
+      }
+      br {
+        display: block;
+        margin: 2rem 0;
       }
       display: flex;
       justify-content: flex-start;
@@ -341,8 +359,39 @@ article.body {
     h1 {
       margin-bottom: 4rem;
     }
+    .caption {
+      margin-bottom: 4rem;
+    }
+    .base-sponsor {
+      padding: 4rem 0rem;
+      img {
+        max-width: 24rem;
+        max-height: 6rem;
+        opacity: .7;
+        transition: ease all .1s;
+        &:hover {
+          opacity: 1;
+          transform: scale(1.05);
+        }
+      }
+    }
+    .gold-sponsor {
+      @extend .base-sponsor;
+      img {
+        max-width: 28rem;
+        max-height: 8rem;
+      }
+    }
+    .silver-sponsor {
+      @extend .base-sponsor;
+    }
+    .sponsor {
+      @extend .base-sponsor;
+    }
+    .small-sponsor {
+      @extend .base-sponsor;
+    }
   }
-
 }
 
 article.contact {
