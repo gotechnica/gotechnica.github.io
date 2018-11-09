@@ -119,6 +119,11 @@ html {
 .register-button {
   border: none; }
 
+@media (max-width: 440px) {
+  .hero-btn-row .hero-button {
+    display: block;
+    margin-bottom: 1rem; } }
+
 .hero-button {
   font-size: 2rem;
   color: white;

@@ -59,6 +59,15 @@ html {
   border: none;
 }
 
+.hero-btn-row {
+  @media (max-width: 440px) {
+    .hero-button {
+      display: block;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
 .hero-button {
   @extend .button;
   font-size: 2rem;
